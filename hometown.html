@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hometown</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="images/bunnypfp-removebg-preview.png" alt="" class="logo" width="100" height="100">
+        <ul>
+            <li><a style="color: #000;" 
+                href="home.html">Home</a></li>
+            <li><a style="color: #000;" 
+                href="profile.html">Profile</a></li>
+            <li><a style="color: #000;" 
+                href="hometown.html">Hometown</a></li>
+            <li><a style="color: #000;" 
+                href="food.html">Food</a></li>
+            <li><a style="color: #000;" 
+                href="tourist.html">Tourist</a></li>
+        </ul>
+    </nav>
+    <div class="hometown">
+        <h1>Saudi Arabia <br> Jubail</h1>
+        <p>This is where I had resided for the past 11 years</p>
+    </div>
+    <div class="card">
+        <h2 class="heading">Facts</h2>
+        <div class="card2">
+            <div class="card-container">
+                <img src="images/jubail indus.jpg">
+                <div class="card-content">
+                    <h3>Industrial City</h3>
+                    <p>Jubail is a city situated in the Eastern Province along the coast of the Persian Gulf in Saudi Arabia. It boasts the largest industrial city globally and 
+                        is also the site of SABIC, the largest petrochemical company in the Middle East and the fourth largest in the world.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="images/humus.jpg">
+                <div class="card-content">
+                    <h3>Beaches</h3>
+                    <p>Hummus is a Levantine and Egyptian food dip or spread made from cooked mashed 
+                        chickpeas or other beans, blended with tahini, olive oil, lemon juice, salt and garlic.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="images/shawarma.jpg">
+                <div class="card-content">
+                    <h3>Shawarma</h3>
+                    <p>It is served in round Arabic bread with meat and vegetables, 
+                        with some spice or sauce of choice, in it. Normally, the meat can either be lamb, beef, turkey, or chicken.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let navbar = document.querySelector('nav');
+        window.onscroll = function (){
+            if(window.scrollY > 0){
+                navbar.style.background = '#eefff9';
+            } else {
+                navbar.style.background = 'transparent';
+            }
+        }
+    </script>
+</body>
+</html>

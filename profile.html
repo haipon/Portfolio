@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="images/bunnypfp-removebg-preview.png" alt="" class="logo" width="100" height="100">
+        <ul>
+            <li><a style="color: #000;" 
+                href="home.html">Home</a></li>
+            <li><a style="color: #000;" 
+                href="profile.html">Profile</a></li>
+            <li><a style="color: #000;" 
+                href="hometown.html">Hometown</a></li>
+            <li><a style="color: #000;" 
+                href="food.html">Food</a></li>
+            <li><a style="color: #000;" 
+                href="tourist.html">Tourist</a></li>
+        </ul>
+    </nav>
+    <section class="home">
+        <div class="home-img">
+            <img src="images/port3.jpg" alt="" width="300" height="380">
+        </div>
+        <div class="home-content">
+            <h1>About <span>Me!</span></h1>
+            <h3 class="typing-text">Sinta Probondari Wardani</h3>
+            <p>An Informatics student at Institut Teknologi Sepuluh Nopember(ITS) that has a passion for creativity and digital media.
+                I'm always excited to explore new ideas and technologies in the world of computer science and media!
+            </p>
+        </div>
+    </section> 
+    <section class="work" id="stuff">
+
+        <h2 class="heading">Skills</h2>
+
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Media Production</h4>
+                    <p>Media production is my greatest strength as I had multiple experiences. I was a part of the Media Production team in INCLENATION 2024
+                        and I am currently a part of the Media Production team at SPE ITS, where I am responsible for the motion and video editing. I have experience
+                        with the use of After Effects, and I am currently learning how to work with Premiere Pro.
+                    </p>
+                </div>
+                <div class="personal-works-container">
+                    <div class="personal-heading">
+                        <h4>Personal Works</h4>
+                    </div>
+                    <div class="personal-videos">
+                        <video controls autoplay muted loop src="images/hutao!.mp4"></video>
+                        <video controls autoplay muted loop src="images/SHENHE.mp4"></video>
+                        <video controls autoplay muted loop src="images/SLIDE 5.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        let navbar = document.querySelector('nav');
+        window.onscroll = function (){
+            if(window.scrollY > 0){
+                navbar.style.background = '#eefff9';
+            } else {
+                navbar.style.background = 'transparent';
+            }
+        }
+    </script>
+</body>
+</html>

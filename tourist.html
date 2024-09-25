@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="images/bunnypfp-removebg-preview.png" alt="" class="logo" width="100" height="100">
+        <ul>
+            <li><a style="color: #000;" 
+                href="home.html">Home</a></li>
+            <li><a style="color: #000;" 
+                href="profile.html">Profile</a></li>
+            <li><a style="color: #000;" 
+                href="hometown.html">Hometown</a></li>
+            <li><a style="color: #000;" 
+                href="food.html">Food</a></li>
+            <li><a style="color: #000;" 
+                href="tourist.html">Tourist</a></li>
+        </ul>
+    </nav>
+    <div class="card">
+        <h2 class="heading">Tourist spots</h2>
+        <div class="card2">
+            <div class="card-container">
+                <img src="images/corniche mosque.jpg">
+                <div class="card-content">
+                    <h3>Corniche Mosque</h3>
+                    <p>Located along the scenic Jubail Corniche, the Jubail Corniche Mosque 
+                        is an architectural marvel that provides a serene ambiance for prayer and contemplation.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="images/fanateer beach.avif">
+                <div class="card-content">
+                    <h3>Fanateer Beach</h3>
+                    <p>Al Fanateer Beach in Jubail is a family-friendly destination with soft sand, clear waters, and 
+                        activities like swimming and beach sports. It offers shaded areas, picnic spots, and food vendors, perfect for a fun and relaxing day by the sea.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="images/dareen beach.avif">
+                <div class="card-content">
+                    <h3>Dareen Beach</h3>
+                    <p>Dareen Beach offers a serene and relaxing environment 
+                        near the seashore, making it an ideal destination for nature lovers and beach enthusiasts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let navbar = document.querySelector('nav');
+        window.onscroll = function (){
+            if(window.scrollY > 0){
+                navbar.style.background = '#eefff9';
+            } else {
+                navbar.style.background = 'transparent';
+            }
+        }
+    </script>
+</body>
+</html>
